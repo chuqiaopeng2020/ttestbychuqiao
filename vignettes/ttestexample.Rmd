@@ -1,0 +1,53 @@
+---
+title: "ttestbychuqiao explanation"
+author: "Chuqiao Peng"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{ttestexample}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+# Two samples t-test
+
+## Dependent samples t-test
+Dependent samples mean that those two samples have same variance of their population.Those samples could come from Same subjects measured twice or related subjects (matched or paired)
+
+For example: we want to know if there is a difference between the scores: 
+
+
+Difference between pre- and post-test scores
+
+Difference between mother and father scores
+
+Difference in scores collected at different age of thesame sample of children
+
+
+
+## Indendent samples t-test
+Dependent samples t-test means there are two separate groups, no interdependence. 
+
+
+For example, those samples could come from: 
+
+
+Experimental and Control
+
+
+Intact Groups
+
+
+Males & Females
+
+
+
+Even in the dependent samples t-test, the variances of the those samples' population could be equal or unequal.
+
+We will use different methods to calculate the t-value when the variances are equal or not. 
